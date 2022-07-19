@@ -1,3 +1,5 @@
+package models;
+
 public class Auth {
     public Boolean success;
     public User user;

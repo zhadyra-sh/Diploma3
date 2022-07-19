@@ -1,9 +1,15 @@
 
+import client.UsersApiClient;
 import io.qameta.allure.junit4.DisplayName;
 
+import models.User;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import pages.ConstructorPage;
+import pages.LoginPage;
+import pages.RegistrationPage;
+import pages.RestorePasswordPage;
 
 
 import static com.codeborne.selenide.Configuration.browser;

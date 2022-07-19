@@ -1,8 +1,12 @@
+package client;
+
 import io.qameta.allure.Step;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
+import models.Auth;
+import models.User;
 import org.apache.http.HttpStatus;
 
 import java.util.ArrayList;
@@ -31,7 +35,7 @@ public class UsersApiClient {
                 .post(API_URL + "auth/register");
     }
 
-    @Step("Auth user.")
+    @Step("models.Auth user.")
     public void login(User user) {
         Auth authorizationInfo = given()
                 .spec(getRequestSpecification())

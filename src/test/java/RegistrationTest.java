@@ -1,9 +1,13 @@
 
 import io.qameta.allure.junit4.DisplayName;
+import models.User;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import pages.LoginPage;
+import pages.RegistrationPage;
+
 import static com.codeborne.selenide.Configuration.browser;
 
 import static com.codeborne.selenide.Selenide.open;
